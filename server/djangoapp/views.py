@@ -1,19 +1,23 @@
-from django.http import JsonResponse
-
-def fetch_reviews(request, dealer_id):
-    # Example static response (replace with your actual logic if needed)
-    reviews = {
-        "dealerId": str(dealer_id),
-        "reviews": [
+def fetch_dealers(request):
+    dealers = {
+        "status": 200,
+        "dealers": [
             {
-                "name": "John Smith",
-                "review": "Great service and friendly staff!",
-                "purchase": True,
-                "purchase_date": "2023-05-15",
-                "car_make": "Toyota",
-                "car_model": "Camry",
-                "car_year": 2022
+                "id": 1,
+                "full_name": "Best Cars Dealership",
+                "city": "New York",
+                "state": "NY",
+                "address": "123 Main Street",
+                "zip": "10001"
+            },
+            {
+                "id": 2,
+                "full_name": "Super Auto Sales",
+                "city": "Chicago",
+                "state": "IL",
+                "address": "456 Market Street",
+                "zip": "60601"
             }
         ]
     }
-    return JsonResponse(reviews)
+    return JsonResponse(dealers)
