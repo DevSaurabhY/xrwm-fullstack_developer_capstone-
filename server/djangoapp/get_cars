@@ -1,0 +1,39 @@
+def get_cars(request):
+    cars = {
+        "CarModels": [
+            {
+                "id": 1,
+                "name": "Camry",
+                "make": {
+                    "id": 1,
+                    "name": "Toyota"
+                }
+            },
+            {
+                "id": 2,
+                "name": "Corolla",
+                "make": {
+                    "id": 1,
+                    "name": "Toyota"
+                }
+            },
+            {
+                "id": 3,
+                "name": "Civic",
+                "make": {
+                    "id": 2,
+                    "name": "Honda"
+                }
+            },
+            {
+                "id": 4,
+                "name": "Accord",
+                "make": {
+                    "id": 2,
+                    "name": "Honda"
+                }
+            }
+        ]
+    }
+
+    return JsonResponse(cars)
