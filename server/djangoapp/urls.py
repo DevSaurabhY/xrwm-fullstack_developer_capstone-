@@ -7,4 +7,5 @@ urlpatterns = [
     path('logout', views.logout_user, name='logout'),
     path('fetchReviews/dealer/<int:dealer_id>', views.fetch_reviews, name='fetch_reviews'),
     path('fetchDealers', views.fetch_dealers, name='fetch_dealers'),
+    path('fetchDealer/<int:dealer_id>', views.fetch_dealer_by_id, name='fetch_dealer_by_id'),
 ]
