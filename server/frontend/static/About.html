@@ -4,47 +4,82 @@
     <meta charset="UTF-8">
     <title>About Us - Cars Dealership</title>
 
-    <!-- Bootstrap CSS (required) -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/static/bootstrap.min.css">
     
-    <!-- Correct CSS Link (same folder) -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/style.css">
 </head>
+
 <body>
 
-    <h1>About Our Cars Dealership</h1>
-    <p>We are a trusted car dealership providing high-quality vehicles at competitive prices.</p>
+<div class="container mt-5">
 
-    <div class="team-container">
+    <h1 class="text-center mb-4">About Our Cars Dealership</h1>
+
+    <p class="lead text-center">
+        We are a trusted and customer-focused car dealership dedicated to providing 
+        high-quality new and pre-owned vehicles at competitive prices.
+    </p>
+
+    <p class="text-center">
+        With years of industry experience, our team ensures every vehicle meets 
+        strict quality standards. We pride ourselves on transparency, affordability, 
+        and delivering an exceptional customer experience from inquiry to purchase.
+    </p>
+
+    <hr class="my-5">
+
+    <div class="row text-center">
 
         <!-- Team Member 1 -->
-        <div class="team-member">
-            <img src="images/team1.jpg" alt="Saurabh Y" width="200">
-            <h2>Saurabh Y</h2>
-            <h3>Lead Developer</h3>
-            <p>Saurabh is responsible for developing and maintaining the full-stack application.</p>
-            <p>Email: saurabh.y@example.com</p>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <img src="/static/images/team1.jpg" class="card-img-top" alt="Saurabh Y">
+                <div class="card-body">
+                    <h5 class="card-title">Saurabh Y</h5>
+                    <p class="card-text"><strong>Lead Developer</strong></p>
+                    <p class="card-text">
+                        Responsible for developing and maintaining the full-stack application.
+                    </p>
+                    <p>Email: saurabh.y@example.com</p>
+                </div>
+            </div>
         </div>
 
         <!-- Team Member 2 -->
-        <div class="team-member">
-            <img src="images/team2.jpg" alt="Anita Sharma" width="200">
-            <h2>Anita Sharma</h2>
-            <h3>Frontend Developer</h3>
-            <p>Anita designs responsive user interfaces and enhances user experience.</p>
-            <p>Email: anita.sharma@example.com</p>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <img src="/static/images/team2.jpg" class="card-img-top" alt="Anita Sharma">
+                <div class="card-body">
+                    <h5 class="card-title">Anita Sharma</h5>
+                    <p class="card-text"><strong>Frontend Developer</strong></p>
+                    <p class="card-text">
+                        Designs responsive user interfaces and enhances user experience.
+                    </p>
+                    <p>Email: anita.sharma@example.com</p>
+                </div>
+            </div>
         </div>
 
         <!-- Team Member 3 -->
-        <div class="team-member">
-            <img src="images/team3.jpg" alt="Rahul Mehta" width="200">
-            <h2>Rahul Mehta</h2>
-            <h3>Backend Developer</h3>
-            <p>Rahul manages the server-side logic and database integration.</p>
-            <p>Email: rahul.mehta@example.com</p>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <img src="/static/images/team3.jpg" class="card-img-top" alt="Rahul Mehta">
+                <div class="card-body">
+                    <h5 class="card-title">Rahul Mehta</h5>
+                    <p class="card-text"><strong>Backend Developer</strong></p>
+                    <p class="card-text">
+                        Manages server-side logic and database integration.
+                    </p>
+                    <p>Email: rahul.mehta@example.com</p>
+                </div>
+            </div>
         </div>
 
     </div>
+
+</div>
 
 </body>
 </html>
